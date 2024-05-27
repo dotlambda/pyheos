@@ -71,13 +71,17 @@ class Heos:
             await self.get_groups(refresh=True)
         return True
 
-    async def sign_in(self, username: str, password: str):
+    async def sign_in(self, username: str, password: str) -> None:
         """Sign-in to the HEOS account on the device directly connected."""
         await self._connection.commands.sign_in(username, password)
 
-    async def sign_out(self):
+    async def sign_out(self) -> None:
         """Sign-out of the HEOS account on the device directly connected."""
         await self._connection.commands.sign_out()
+
+    async def reboot(self) -> None:
+        """Reboot the HEOS device directly connected."""
+        await self._connection.commands.reboot()
 
     async def load_players(self):
         """Refresh the players."""

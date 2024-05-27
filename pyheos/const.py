@@ -23,6 +23,16 @@ REPEAT_ON_ONE = "on_one"
 REPEAT_OFF = "off"
 VALID_REPEAT_MODES = (REPEAT_ON_ALL, REPEAT_ON_ONE, REPEAT_OFF)
 
+# Parameters
+PARAM_ENABLE = "enable"
+PARAM_SIGNED_IN = "signed_in"
+PARAM_USERNAME = "un"
+PARAM_PASSWORD = "pw"
+
+# Parameter Values
+VALUE_ON = "on"
+VALUE_OFF = "off"
+
 # Music Source Types
 TYPE_MUSIC_SERVICE = "music_service"
 TYPE_STATION = "station"
@@ -257,6 +267,7 @@ COMMAND_HEART_BEAT = "system/heart_beat"
 COMMAND_ACCOUNT_CHECK = "system/check_account"
 COMMAND_SIGN_IN = "system/sign_in"
 COMMAND_SIGN_OUT = "system/sign_out"
+COMMAND_REBOOT = "system/reboot"
 
 # Events
 EVENT_PLAYER_STATE_CHANGED = "event/player_state_changed"

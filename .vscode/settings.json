@@ -13,5 +13,9 @@
             "when": "$(basename).py"
         },
         "**/__pycache__": true
-    }
+    },
+    "cSpell.words": [
+        "caplog",
+        "HEOS"
+    ]
 }
